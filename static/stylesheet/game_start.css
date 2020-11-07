@@ -1,0 +1,31 @@
+body {
+  background-color: forestgreen;
+}
+
+h2 {
+  border: groove;
+  border-width: 3px;
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 238, 0);
+  color: rgb(252, 5, 5);
+}
+
+table {
+  background-color: rgb(0, 242, 250);
+}
+
+
+p {
+  border: groove;
+  border-width: 3px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgb(255, 238, 0);
+  color: rgb(252, 5, 5);
+}

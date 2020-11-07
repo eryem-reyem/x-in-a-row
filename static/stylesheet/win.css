@@ -1,0 +1,14 @@
+body {
+    background-color: forestgreen;
+  }
+  
+h1 {
+    border: groove;
+    border-width: 3px;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 238, 0);
+    color: rgb(252, 5, 5);
+  }
