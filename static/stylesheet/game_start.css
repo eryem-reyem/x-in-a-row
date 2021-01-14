@@ -29,3 +29,12 @@ p {
   background-color: rgb(255, 238, 0);
   color: rgb(252, 5, 5);
 }
+
+.button {
+  border: groove;
+  border-width: 3px;
+  background-color: rgb(255, 238, 0);
+  color: rgb(252, 5, 5);
+  height:80px;
+  width:80px;
+}

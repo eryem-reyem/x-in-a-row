@@ -3,6 +3,9 @@
     <title>x in a row</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylesheet/game_player2.css') }}">
     <body>
+        {% if cpu == 1 %}
+        <meta http-equiv="refresh"; content="1; URL=http://127.0.0.1:5000/game_player2">
+        {%endif %}
         <center>
         <h2>{{headline}}</h2>
         {% if game_status == 'active' %}
@@ -22,13 +25,23 @@
                 </tr>
                 {% endfor %}
             </table>
-        <div id= div1>
+            <table>
+                <tr>
+                    {% set number = 1 %}
+                    {% for i in range(width) %}
+                    {% set number = number|int + i|int %}
+                    <button class="button" name='name' type="submit" value={{number}}>{{number}}</button>
+                    {% endfor %}
+                </tr>
+            </table>
+        <!--<div id= div1>
             <p>{{instruction}} <input type = 'text' name = 'name' /> <input type = 'submit' value = 'submit' /></p>
-        </div>
+        </div>-->
         </form>
         {% else %}   
         <meta http-equiv="refresh"; content="1; URL=http://127.0.0.1:5000/win" >
-        {% endif %}
+        {%endif %}
+         
         </center>
     </body>
 </html>

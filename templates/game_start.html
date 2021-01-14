@@ -21,10 +21,20 @@
                     {% endfor %}
                 </tr>
                 {% endfor %}
+                
             </table>
-        <div id= div1>
+            <table>
+                <tr>
+                    {% set number = 1 %}
+                    {% for i in range(width) %}
+                    {% set number = number|int + i|int %}
+                    <button class="button" name='name' type="submit" value={{number}}>{{number}}</button>
+                    {% endfor %}
+                </tr>
+            </table>
+        <!--<div id= div1>
             <p>{{instruction}} <input type = 'text' name = 'name' /> <input type = 'submit' value = 'submit' /></p>
-        </div>
+        </div>-->
         </form>
         {% else %}   
         <meta http-equiv="refresh"; content="1; URL=http://127.0.0.1:5000/win" >

@@ -5,8 +5,11 @@
     <body>
         <center>
         <h1 class="h1">{{instruction}}</h1>
-        <form action = 'http://127.0.0.1:5000/game_start' method ='post'>
-        <h1><input type = 'submit' value = 'ENTER' /></h1>
+        <form action = 'http://127.0.0.1:5000/game_start/0' method ='post'>
+            <h1><input type = 'submit' value = 'ENTER' /></h1>
+        </form>
+        <form action = 'http://127.0.0.1:5000/game_start/1' method ='post'>
+            <h1><input type = 'submit' value = 'cpu' /></h1>
         </form>
         </center>
     </body>
